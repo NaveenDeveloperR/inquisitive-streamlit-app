@@ -1,6 +1,6 @@
 # Inquisitive Streamlit App
 
-![Inquisitive Logo](path_to_your_logo.png)
+![Inquisitive website](path_to_your_logo.png)
 
 ## Overview
 
