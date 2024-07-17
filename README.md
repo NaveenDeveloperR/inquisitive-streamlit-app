@@ -94,7 +94,6 @@ We welcome contributions to enhance the Inquisitive app. To contribute, follow t
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. 
 ```
 
-This markdown file is now formatted for readability and clarity, providing comprehensive instructions and information about the Inquisitive Streamlit App.
