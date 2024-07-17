@@ -1,9 +1,10 @@
-Here's the markdown version of the elaborated README for the Inquisitive Streamlit App:
-
 # Inquisitive Streamlit App
 
 ![Inquisitive Input Screen](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/user_input.png)
+*Inquisitive Input Screen*
+
 ![Inquisitive Response Screen](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/output.png)
+*Inquisitive Response Screen*
 
 ## Overview
 
