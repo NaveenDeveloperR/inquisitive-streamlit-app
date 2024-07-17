@@ -1,6 +1,6 @@
 # Inquisitive Streamlit App
 
-![Inquisitive website](path_to_your_logo.png)
+![Inquisitive website]([path_to_your_logo.png](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/user_input.png))
 
 ## Overview
 
