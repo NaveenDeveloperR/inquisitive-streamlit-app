@@ -1,10 +1,10 @@
 # Inquisitive Streamlit App
-
-![Inquisitive Input Screen](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/user_input.png)
 *Inquisitive Input Screen*
+![Inquisitive Input Screen](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/user_input.png)
 
-![Inquisitive Response Screen](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/output.png)
 *Inquisitive Response Screen*
+![Inquisitive Response Screen](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/output.png)
+
 
 ## Overview
 
