@@ -95,5 +95,5 @@ We welcome contributions to enhance the Inquisitive app. To contribute, follow t
 ## License
 
 This project is licensed under the MIT License. 
-```
+
 
