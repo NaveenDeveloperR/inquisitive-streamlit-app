@@ -1,7 +1,7 @@
 # Inquisitive Streamlit App
 
-![Inquisitive website](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/user_input.png)
-![Inquisitive website](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/user_input.png)
+![Inquisitive input screen](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/user_input.png)
+![Inquisitive response screen](https://github.com/NaveenDeveloperR/inquisitive-streamlit-app/blob/main/images/output.png)
 
 ## Overview
 
