@@ -31,7 +31,7 @@ Make sure you have the following installed:
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/your-username/inquisitive-streamlit-app.git
+git clone https://github.com/NaveenDeveloperR/inquisitive-streamlit-app.git
 cd inquisitive-streamlit-app
 ```
 
