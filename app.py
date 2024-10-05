@@ -1,33 +1,26 @@
 import streamlit as st
-import google.generativeai as palm
+import google.generativeai as genai  # Update to Gemini API
 from langdetect import detect
 from googletrans import Translator
 import re
+import os
 
-# Configure the API with your API key
-palm.configure(api_key="AIzaSyBxGYppk4xTJZS15tE8apj0ODi7aq75AK0")
+# Configure the Gemini API with your API key
+genai.configure(api_key="AIzaSyBxGYppk4xTJZS15tE8apj0ODi7aq75AK0")  # Replace with your actual Gemini API key
 translator = Translator()
 
-# List available models and select one
-models = [model for model in palm.list_models()]
-if len(models) > 1:
-    model_name = models[1].name  # Assuming there are models available
-else:
-    model_name = "default_model_name"  # Set a default model name if no models are listed
+# Define the model
+model = genai.GenerativeModel(model_name='gemini-pro')  # Assuming 'gemini-pro' is the model you want
 
-# Function to generate questions from text
-def generate_questions(model_name, text):
-    response = palm.generate_text(
-        model=model_name,
-        prompt=f"Generate questions from the following text: \n\n{text}\n\nQuestions:",
-        max_output_tokens=150
-    )
-    # Extract generated text from the result attribute
-    questions = response.result.strip() if response.result else "No questions generated."
+# Function to generate questions from text using Gemini
+def generate_questions(text):
+    response = model.generate_content(f"Generate questions from the following text:\n\n{text}\n\nQuestions:")
+    # Extract generated text from the response (adjusting based on actual Gemini response format)
+    questions = response.text.strip() if response.text else "No questions generated."
     return questions
 
 def main():
-    st.title("Inquisitive")
+    st.title("Inquisitive (Gemini Version)")
     
     # Input text from the user
     user_text = st.text_area("Enter the text you want questions generated from:")
@@ -37,7 +30,6 @@ def main():
     
     # Define minimum word limit
     min_word_limit = 5
-    
     
     # Display information based on word count
     if word_count < min_word_limit:
@@ -56,10 +48,10 @@ def main():
                 st.error(f"Error during language detection or translation: {str(e)}")
                 return
             
-            # Generate questions
-            questions = generate_questions(model_name, translated_text)
+            # Generate questions using Gemini API
+            questions = generate_questions(translated_text)
                 
-            # Translate questions back to the original language if translated 
+            # Translate questions back to the original language if needed 
             if detected_language != 'en':
                 try:
                     questions = translator.translate(questions, src="en", dest=detected_language).text
@@ -73,3 +65,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
