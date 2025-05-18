@@ -23,7 +23,7 @@ try:
     genai.configure(api_key=API_KEY)
     # Define the model - Using gemini-1.0-pro as it's generally available and robust
     # If you specifically need 1.5-pro, ensure your key has access and keep that name.
-    model = genai.GenerativeModel(model_name='gemini-1.0-pro')
+    model = genai.GenerativeModel(model_name='gemini-2.5-flash-preview-04-17')
 except Exception as e:
     st.error(f"Failed to configure Gemini API: {e}")
     st.stop()
