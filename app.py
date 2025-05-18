@@ -6,11 +6,11 @@ import re
 import os
 
 # Configure the Gemini API with your API key
-genai.configure(api_key="AIzaSyBxGYppk4xTJZS15tE8apj0ODi7aq75AK0")  # Replace with your actual Gemini API key
+genai.configure(api_key="AIzaSyBB2npUDIRkEfAuzo4g93YI03IYt9ImXd8")  # Replace with your actual Gemini API key
 translator = Translator()
 
 # Define the model
-model = genai.GenerativeModel(model_name='gemini-pro')  # Assuming 'gemini-pro' is the model you want
+model = genai.GenerativeModel(model_name='gemini-1.5-pro-latest')  # Assuming 'gemini-pro' is the model you want
 
 # Function to generate questions from text using Gemini
 def generate_questions(text):
