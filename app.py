@@ -71,7 +71,7 @@ Questions:
 def main():
     st.title("Inquisitive (Gemini Version)")
 
-    st.info("This app generates questions from text using the Google Gemini API. Ensure you have set the `GOOGLE_API_KEY` environment variable.")
+    st.info("This app generates questions from text using the Google Gemini API.")
 
     # Input text from the user
     user_text = st.text_area("Enter the text you want questions generated from:")
