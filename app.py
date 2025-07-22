@@ -11,7 +11,7 @@ import os # Import os to access environment variables
 # Get the API key from environment variables
 # Replace "GOOGLE_API_KEY" with the actual name of your environment variable if different
 # Ensure you set this environment variable where you run the app (e.g., Render settings, .env file)
-API_KEY = os.getenv("GOOGLE_API_KEY")
+API_KEY = os.getenv("GOOGLE_API_KEY") or st.secrets.get("GOOGLE_API_KEY")
 
 # Check if the API key is available
 if not API_KEY:
