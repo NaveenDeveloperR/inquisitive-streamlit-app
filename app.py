@@ -18,12 +18,16 @@ if not API_KEY:
     st.error("Google API key not found. Please set the 'GOOGLE_API_KEY' environment variable.")
     st.stop() # Stop the app if the key is missing
 
+st.subheader("Available Models")
+for model_info in genai.list_models():
+    st.write(model_info.name)
+
 # Configure the Gemini API
 try:
     genai.configure(api_key=API_KEY)
     # Define the model - Using gemini-1.0-pro as it's generally available and robust
     # If you specifically need 1.5-pro, ensure your key has access and keep that name.
-    model = genai.GenerativeModel(model_name='gemini-pro')
+    model = genai.GenerativeModel(model_name='gemini-1.5-pro')
 except Exception as e:
     st.error(f"Failed to configure Gemini API: {e}")
     st.stop()
