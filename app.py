@@ -8,8 +8,10 @@ import os
 import openai
 
 # --- API Key Configuration ---
-API_KEY = os.getenv("GOOGLE_API_KEY") or st.secrets.get("GOOGLE_API_KEY")
-OPENAI_KEY = os.getenv("OPENAI_API_KEY") or st.secrets.get("OPENAI_API_KEY")
+API_KEY = os.getenv("GOOGLE_API_KEY") 
+# or st.secrets.get("GOOGLE_API_KEY")
+OPENAI_KEY = os.getenv("OPENAI_API_KEY") 
+# or st.secrets.get("OPENAI_API_KEY")
 
 if not API_KEY and not OPENAI_KEY:
     st.error("❌ No API keys found. Please set 'GOOGLE_API_KEY' or 'OPENAI_API_KEY'.")
