@@ -1,6 +1,7 @@
-#libraries to be installed
+# #libraries to be installed
 streamlit==1.10.0
 google-generativeai
 langdetect==1.0.9
 googletrans==4.0.0-rc1
 altair<5
+openai
